@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/main.css">
+    <!-- Font awsome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-qddBPtAop8iZ38C+n6fNlUz9xldKyN5UXHm6mzOyBcOlqf+nMzNjrLjlgM6qSdIqx3+KqLNSr8EAK4MfXpPL3A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="https://kit.fontawesome.com/2f6fbc5bd3.js" crossorigin="anonymous"></script>
+    <!-- Title -->
+    <!-- Script for logic -->
+    <script src="/js/time.js"></script>
+
+    <title>Atilla Idriz || Front end Developer</title>
+  </head>
+<body>
+    <!-- Header -->
+    <header id="header">
+      <div id="navbar">
+          <!-- <img src="img/logo.png" alt="My Portfolio" id="logo"> -->
+          <h1>
+              <span id="h1-id">Atilla </span>Idriz
+          </h1>
+          <nav>
+              <ul>
+                  <li><a href="index.html" class="btn-navbar">About</a></li>
+                  <li><a class="btn-navbar" href="projects.html">Projects</a></li>
+                  <li><a class="btn-navbar" href="mailto:atilla.arbeit1@gmail.com" target="_blank">Contact</a></li>
+              </ul>
+          </nav>
+      </div>
+  
+      <div id="header-content">
+          <h1>Front <span class="txt-type" data-wait="3000" data-words='["Front End Developer", "Software Engineer"]'> End Developer</span></h1>
+          <p class="lead">I specialize in Front-end Development and Software Engineering</p>
+          <a href="projects.html" class="btn-light">View my work</a> 
+      </div>
+  </header>
+  
+    
+
+    <!-- Showcase / Einleitung -->
+    <header id="showcase">
+        <div class="container">
+          <h1>I specialize in</h1>
+          <h4>Front-end Development || Software engineuring || Back-end Development</h4>
+            <div class="showcase-container">
+              <div class="icons">
+                <ul>
+                  <li><i class="fa-solid fa-display"></i><h5>Web Development</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, unde odio inventore iste tempore maiores?</p>
+                  </li>
+                </ul>
+                <ul>
+                  <li><i class="fa-regular fa-file-lines"></i><h5>Software Engineuring</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In omnis amet enim non sunt magni!</p>
+                  </li>
+                </ul>
+                
+                <ul>
+                  <li><i class="fa-solid fa-calendar-days"></i><h5>Planning Projects</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In omnis amet enim non sunt magni!</p>
+                  </li>
+                </ul>
+                
+              </div>
+                <div class="showcase-content">
+                    <h1 class="content">Software Engineur</h1>
+                    
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+                    doloremque quasi hic consequuntur sint repudiandae natus dolore nostrum ad tenetur?</p>
+                    <!-- <a href="index.html" class="btn-main">Read more</a> -->
+                </div>
+            </div>
+        </div>
+    </header>
+  
+  <!-- Timeline -->
+  <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const items = document.querySelectorAll('#timeline ul li');
+
+            const isInViewport = el => {
+                const rect = el.getBoundingClientRect();
+                return (
+                    rect.top >= 0 &&
+                    rect.left >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
+            };
+
+            const run = () =>
+                items.forEach(item => {
+                    if (isInViewport(item)) {
+                        item.classList.add('show');
+                    }
+                });
+
+            // Events
+            window.addEventListener('load', run);
+            window.addEventListener('resize', run);
+            window.addEventListener('scroll', run);
+        });
+    </script>
+
+  <section id="timeline">
+    <h2>Programming journey of mine</h2>
+    <ul>
+        <li>
+            <div>
+                <h3><i class="fa fas-chevron"></i>2023 Python course</h3>
+                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum in quidem dolorem excepturi quod quibusdam ipsum, obcaecati debitis rem maiores.</p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3><i class="fa fas-chevron"></i>2023 CS50 from Harvard University</h3>
+                <p>Lorem ipsum dolor sit amet. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, facilis consectetur illo omnis aspernatur placeat.</p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3><i class="fa fas-chevron"></i>2023 PHP backend</h3>
+                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat expedita assumenda repellendus recusandae libero animi eum voluptatum eius facere ullam.</p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3><i class="fa fas-chevron"></i>2024 CS50W (Web Development) from Harvard University</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3><i class="fa fas-chevron"></i>2024 Udemy Course</h3>
+                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ea consequuntur suscipit id rerum quam doloremque assumenda nihil ab natus!</p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3><i class="fa fas-chevron"></i>2024 Front end Mentor</h3>
+                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ea consequuntur suscipit id rerum quam doloremque assumenda nihil ab natus!</p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <h3><i class="fa fas-chevron"></i>2024 Fullstack Projects </h3>
+                <p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ea consequuntur suscipit id rerum quam doloremque assumenda nihil ab natus!</p>
+            </div>
+        </li>
+    </ul>
+  </section>
+  
+  <!-- Footer with links -->
+  <footer class="mail">
+    <div class="av">
+      <a href="mailto:atilla.arbeit1@gmail.com" target="_blank">atilla.arbeit1@gmail.com</a>
+    </div>
+  </footer>
+  <footer class="main-footer">
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a
+          href="https://github.com/Idriz4work/"
+          class="social-list__link"
+          target="_blank"
+          ><i class="fa-brands fa-github fa-2x"></i
+        ></a>
+      </li>
+      <li class="social-list__item">
+        <a
+          href="https://www.linkedin.com/in/atillaidriz/"
+          class="social-list__link"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin-in fa-2x"></i
+        ></a>
+      </li>
+      <li class="social-list__item">
+        <a
+          href="https://twitter.com/"
+          class="social-list__link"
+          target="_blank"
+          ><i class="fa-brands fa-x-twitter fa-2x"></i
+        ></a>
+      </li>
+      <li class="social-list__item">
+        <a
+          href="https://www.instagram.com//"
+          class="social-list__link"
+          target="_blank"
+          ><i class="fa-brands fa-instagram fa-2x"></i
+        ></a>
+      </li>
+    </ul>
+  </footer>
+  <footer class="za">
+    <p>Copyright &copy; 2024 Atilla Idriz</p>
+  </footer>
+
+</body>
+</html>
